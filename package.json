@@ -22,7 +22,10 @@
     "@angular/platform-browser-dynamic": "5.2.9",
     "@angular/router": "5.2.9",
     "@angular/service-worker": "5.2.9",
+    "@types/mapbox-gl": "^0.44.1",
     "core-js": "^2.4.1",
+    "mapbox-gl": "^0.44.1",
+    "ngx-mapbox-gl": "^1.0.0-rc.2",
     "rxjs": "^5.5.8",
     "zone.js": "^0.8.20"
   },
