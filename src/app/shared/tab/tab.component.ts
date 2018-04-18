@@ -4,11 +4,19 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-tab',
   template: `
-<div>  <mat-tab-group>
-<mat-tab label="Tab 1">Content 1</mat-tab>
-<mat-tab label="Tab 2">Content 2</mat-tab>
-</mat-tab-group></div>
-  `
+  <div class="flexDemoContainer">
+  <div fxLayout="row"  fxFlex>
+    <div fxFlex>
+    <mat-tab-group>
+    <mat-tab label="Tab 1">Tab 1</mat-tab>
+    <mat-tab label="Tab 2">Tab 2</mat-tab>
+    <mat-tab label="Tab 1">Tab 3</mat-tab>
+    <mat-tab label="Tab 2">Tab 4</mat-tab>
+    </mat-tab-group> 
+    </div> 
+  </div> 
+  `,
+  styleUrls: ['./tab.css']
 })
 export class TabComponent implements OnInit {
   constructor() {}
