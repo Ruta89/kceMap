@@ -3,15 +3,32 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-    <!--The content below is only a placeholder and can be replaced.-->
-    <div style="text-align:center">
-      <h1>
-        Welcome to {{title}}!
-      </h1>
-    </div>
+  <mgl-map
+  [style]="'mapbox://styles/mapbox/streets-v10'"
+  [zoom]="[9]"
+  [center]="[19.04, 50]"
+  [fitBounds]="bounds"
+>
+</mgl-map>
   `,
-  styles: []
+  styles: [
+    `
+  :host {
+    display: flex;
+  }
+  mgl-map {
+    height: 100vh;
+    width: 100vw;
+  }
+`
+  ]
 })
 export class AppComponent {
-  title = 'kceMap';
+  bounds: any;
+
+  ngAfterViewInit() {
+    setTimeout(() => {
+      this.bounds = [[19.0013, 50.2644], [19.0413, 50.2944]];
+    }, 2000);
+  }
 }
