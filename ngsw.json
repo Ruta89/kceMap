@@ -1,0 +1,34 @@
+{
+  "configVersion": 1,
+  "index": "https://Ruta89.github.io/kceMap/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://Ruta89.github.io/kceMap/index.html",
+        "https://Ruta89.github.io/kceMap/inline.318b50c57b4eba3d437b.bundle.js",
+        "https://Ruta89.github.io/kceMap/main.31fc8089b9fae7a5424e.bundle.js",
+        "https://Ruta89.github.io/kceMap/polyfills.ce821abd433523b8160a.bundle.js",
+        "https://Ruta89.github.io/kceMap/styles.1d47cf5d2328ab86cfb6.bundle.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://Ruta89.github.io/kceMap/inline.318b50c57b4eba3d437b.bundle.js": "998c6060446975e566fd17509558ddc68d72eec3",
+    "https://Ruta89.github.io/kceMap/main.31fc8089b9fae7a5424e.bundle.js": "a0451a4a9c19d127a19986cc6136dcbfe45442c1",
+    "https://Ruta89.github.io/kceMap/polyfills.ce821abd433523b8160a.bundle.js": "1efb43b628f58146c7d7c98e11c9b496244802da",
+    "https://Ruta89.github.io/kceMap/styles.1d47cf5d2328ab86cfb6.bundle.css": "23e207d070328bea7029346723ea60c1e29856ad",
+    "https://Ruta89.github.io/kceMap/index.html": "3d56d0bf7f031eb1d889b867b0bdf21c49e1ad69"
+  }
+}
