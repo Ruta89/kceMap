@@ -21,7 +21,7 @@ import { Routes } from '@angular/router';
     display: flex;
   }
   mgl-map {
-    height: 70vh;
+    height: 50vh;
     width: 100vw;
   }
 `

@@ -11,7 +11,14 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { MapComponent } from './map/map.component';
 import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatToolbarModule, MatTabsModule } from '@angular/material';
+import {
+  MatToolbarModule,
+  MatTabsModule,
+  MatIconModule,
+  MatCardMdImage,
+  MatCardModule,
+  MatButtonModule
+} from '@angular/material';
 import { TabComponent } from './shared/tab/tab.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
@@ -44,16 +51,21 @@ const appRoutes: Routes = [
         'pk.eyJ1IjoicnV0YTg5IiwiYSI6ImNqM2xwNGR4NDAwNTMycm83bnU3dWtsaGsifQ.wBDLAm3MTTlyVKb4f3X60Q'
     }),
     RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
+      appRoutes
+      // ,
+      // { enableTracing: true }
     ),
     BrowserAnimationsModule,
     MatToolbarModule,
     MatTabsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatIconModule,
+    MatCardModule,
+    MatButtonModule
     // MaterialModule
     // other imports here
   ],
+  exports: [MatCardModule],
   providers: [],
   bootstrap: [AppComponent]
 })

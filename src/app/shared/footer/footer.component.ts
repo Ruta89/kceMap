@@ -3,10 +3,12 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
-  template: `<app-tab></app-tab>
+  template: ` 
   <mat-toolbar color="accent">
 
-  <footer> stopka</footer>
+  <footer> stopka</footer><small>
+  ng build --prod --base-href "https://Ruta89.github.io/kceMap/" && ngh
+ </small>
   </mat-toolbar> 
   `,
   styles: []

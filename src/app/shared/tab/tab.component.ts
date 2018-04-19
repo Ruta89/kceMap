@@ -4,17 +4,26 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-tab',
   template: `
-  <div class="flexDemoContainer">
-  <div fxLayout="row"  fxFlex>
-    <div fxFlex>
-    <mat-tab-group>
-    <mat-tab label="Tab 1">Tab 1</mat-tab>
-    <mat-tab label="Tab 2">Tab 2</mat-tab>
-    <mat-tab label="Tab 1">Tab 3</mat-tab>
-    <mat-tab label="Tab 2">Tab 4</mat-tab>
-    </mat-tab-group> 
-    </div> 
-  </div> 
+<div class="flexDemoContainer">
+  <div fxLayout="column" color="primary">
+    <mat-tab-group color="primary" >
+      <mat-tab label="Tab 1"> 
+      <ng-template mat-tab-label>
+      <mat-icon>build</mat-icon>
+    </ng-template>
+    </mat-tab>
+      <mat-tab label="Tab 2"> <ng-template mat-tab-label>
+      <mat-icon>block</mat-icon>
+    </ng-template></mat-tab>
+      <mat-tab label="Tab 3"> <ng-template mat-tab-label>
+      <mat-icon>loop</mat-icon>
+    </ng-template></mat-tab>
+      <mat-tab label="Tab 4"> <ng-template mat-tab-label>
+      <mat-icon>work</mat-icon>
+    </ng-template></mat-tab>
+    </mat-tab-group>
+  </div>
+</div>
   `,
   styleUrls: ['./tab.css']
 })
